@@ -1,0 +1,25 @@
+ Create Database
+CREATE DATABASE Food;
+
+Use the Database
+USE Food;
+
+ Create Table
+CREATE TABLE Food_items (
+    item_id INT PRIMARY KEY,
+    food_name VARCHAR(50),
+    price DECIMAL(10,2),
+    qty INT,
+    total DECIMAL(10,2)
+
+ Insert Values
+INSERT INTO Food_items (item_id, food_name, price, qty, total)
+VALUES
+(1, 'Pizza', 250.00, 2, 500.00),
+(2, 'Burger', 120.00, 3, 360.00),
+(3, 'Biryani', 180.00, 2, 360.00),
+(4, 'Fried Rice', 150.00, 1, 150.00),
+(5, 'Ice Cream', 80.00, 2, 160.00);
+
+-- Display the Table
+SELECT * FROM Food_items;
